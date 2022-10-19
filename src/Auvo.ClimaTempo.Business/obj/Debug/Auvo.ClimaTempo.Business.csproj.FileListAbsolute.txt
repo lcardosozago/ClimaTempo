@@ -1,0 +1,6 @@
+C:\Users\Lucas\source\repos\TesteEntrevista\Auvo.ClimaTempo\src\Auvo.ClimaTempo.Business\bin\Debug\Auvo.ClimaTempo.Business.dll
+C:\Users\Lucas\source\repos\TesteEntrevista\Auvo.ClimaTempo\src\Auvo.ClimaTempo.Business\bin\Debug\Auvo.ClimaTempo.Business.pdb
+C:\Users\Lucas\source\repos\TesteEntrevista\Auvo.ClimaTempo\src\Auvo.ClimaTempo.Business\obj\Debug\Auvo.ClimaTempo.Business.csproj.AssemblyReference.cache
+C:\Users\Lucas\source\repos\TesteEntrevista\Auvo.ClimaTempo\src\Auvo.ClimaTempo.Business\obj\Debug\Auvo.ClimaTempo.Business.csproj.CoreCompileInputs.cache
+C:\Users\Lucas\source\repos\TesteEntrevista\Auvo.ClimaTempo\src\Auvo.ClimaTempo.Business\obj\Debug\Auvo.ClimaTempo.Business.dll
+C:\Users\Lucas\source\repos\TesteEntrevista\Auvo.ClimaTempo\src\Auvo.ClimaTempo.Business\obj\Debug\Auvo.ClimaTempo.Business.pdb

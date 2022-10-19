@@ -1,0 +1,67 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+    background-color: #777;
+    border-color: #fff
+}
+
+/* Site CSS */
+
+.card-header {
+    color: #FFF;
+    background-color: #2198F3;
+    border-radius: 5px 5px 0px 0px;
+    padding: 8px 15px;
+}
+
+.card-body {
+    border-left: 3px solid #2198F3;
+    border-right: 3px solid #2198F3;
+    border-bottom: 3px solid #2198F3;
+    border-radius: 0px 0px 5px 5px;
+    background-color: rgba(0, 0, 0, 0.03);
+    padding: 8px 15px;
+}
+
+.clima-sete-dias {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cidade {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cidade-select-container {
+    width: 30%;
+}
+
+#cidade-select {
+    width: 100%;
+    max-width: 100%;
+}

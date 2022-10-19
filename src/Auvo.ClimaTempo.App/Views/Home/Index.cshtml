@@ -1,0 +1,134 @@
+﻿@{
+    ViewBag.Title = "Página Inicial";
+}
+
+<div class="row">
+    <div class="col-xs-12">
+        <div class="jumbotron">
+            <h1>Clima Tempo Simples</h1>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12 col-md-6">
+        <div class="card-header">
+            Cidades mais quentes hoje
+        </div>
+        <div class="card-body">
+            @foreach (var previsaoClima in ViewBag.PrevisaoClimaCidadesMaisQuentes)
+            {
+                <div class="row">
+                    <div class="col-xs-6">@previsaoClima.CidadeNome / @previsaoClima.UF</div>
+                    <div class="col-xs-3">Min @previsaoClima.TemperaturaMinima °C</div>
+                    <div class="col-xs-3">Max @previsaoClima.TemperaturaMaxima °C</div>
+                </div>
+            }
+        </div>
+    </div>
+    <div class="col-xs-12 col-md-6">
+        <div class="card-header">
+            Cidades mais frias hoje
+        </div>
+        <div class="card-body">
+            @foreach (var previsaoClima in ViewBag.PrevisaoClimaCidadesMaisFrias)
+            {
+                <div class="row">
+                    <div class="col-xs-6">@previsaoClima.CidadeNome / @previsaoClima.UF</div>
+                    <div class="col-xs-3">Min @previsaoClima.TemperaturaMinima °C</div>
+                    <div class="col-xs-3">Max @previsaoClima.TemperaturaMaxima °C</div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
+        <div class="cidade">
+            <div class="cidade-select-container">
+                <div><strong>Cidade:</strong></div>
+                <select id="cidade-select" name="cidade">
+                    @foreach (var cidade in ViewBag.Cidades)
+                    {
+                        <option value="@cidade.CidadeId">@cidade.CidadeNome / @cidade.UF</option>
+                    }
+                </select>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
+        <h3 class="clima-sete-dias-title text-center"><!-- Renderizado via javascript --></h3>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
+        <div class="clima-sete-dias">
+            <!-- Renderizado via javascript -->
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    <script>
+        $(document).ready(function () {
+            function atualizarClimaDosProximosSeteDias(lista = []) {
+                $('.clima-sete-dias').empty();
+
+                for (let i = 0; i < lista.length; i++) {
+                    $('.clima-sete-dias').append(`
+                        <div class="clima-dia-card">
+                            <div class="card-header">
+                                ${new Date(parseInt(lista[i].DataPrevisao.substr(6))).toLocaleDateString('pt-BR')}
+                            </div>
+                            <div class="card-body">
+                                <div>
+                                    <span>${lista[i].Clima}</span>
+                                </div>
+                                <div>Mínima: ${lista[i].TemperaturaMinima}°C</div>
+                                <div>Máxima: ${lista[i].TemperaturaMaxima}°C</div>
+                            </div>
+                        </div>
+                    `);
+                }
+            }
+
+            $('#cidade-select').val('');
+
+            $('#cidade-select').select2({
+                placeholder: 'Selecione a cidade',
+                allowClear: true
+            });
+
+            atualizarClimaDosProximosSeteDias();
+
+            $.ajaxSetup({
+                cache: false
+            });
+
+            $('#cidade-select').change(function () {
+                var cidadeNome = $("#cidade-select option:selected").text();
+                var cidadeSelecionadaId = $(this).val();
+                var url = `/clima/sete-dias-previsao/${cidadeSelecionadaId}`;
+
+                $.ajax({
+                    type: 'GET',
+                    url: url,
+                    contentType: "application/json",
+                    success: function (response) {
+                        $('.clima-sete-dias-title').text(`Clima para os próximos sete dias na cidade de ${cidadeNome}`);
+                        atualizarClimaDosProximosSeteDias(response.lista);
+                    },
+                    error: function () {
+                        $('.clima-sete-dias-title').text('');
+                        atualizarClimaDosProximosSeteDias();
+                    }
+                });
+            });
+        });
+    </script>
+}

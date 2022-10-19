@@ -1,0 +1,14 @@
+C:\Users\Lucas\source\repos\TesteEntrevista\Auvo.ClimaTempo\src\Auvo.ClimaTempo.Infra\bin\Debug\Auvo.ClimaTempo.Infra.dll.config
+C:\Users\Lucas\source\repos\TesteEntrevista\Auvo.ClimaTempo\src\Auvo.ClimaTempo.Infra\bin\Debug\Auvo.ClimaTempo.Infra.dll
+C:\Users\Lucas\source\repos\TesteEntrevista\Auvo.ClimaTempo\src\Auvo.ClimaTempo.Infra\bin\Debug\Auvo.ClimaTempo.Infra.pdb
+C:\Users\Lucas\source\repos\TesteEntrevista\Auvo.ClimaTempo\src\Auvo.ClimaTempo.Infra\bin\Debug\Auvo.ClimaTempo.Business.dll
+C:\Users\Lucas\source\repos\TesteEntrevista\Auvo.ClimaTempo\src\Auvo.ClimaTempo.Infra\bin\Debug\EntityFramework.dll
+C:\Users\Lucas\source\repos\TesteEntrevista\Auvo.ClimaTempo\src\Auvo.ClimaTempo.Infra\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Lucas\source\repos\TesteEntrevista\Auvo.ClimaTempo\src\Auvo.ClimaTempo.Infra\bin\Debug\Auvo.ClimaTempo.Business.pdb
+C:\Users\Lucas\source\repos\TesteEntrevista\Auvo.ClimaTempo\src\Auvo.ClimaTempo.Infra\bin\Debug\EntityFramework.xml
+C:\Users\Lucas\source\repos\TesteEntrevista\Auvo.ClimaTempo\src\Auvo.ClimaTempo.Infra\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Lucas\source\repos\TesteEntrevista\Auvo.ClimaTempo\src\Auvo.ClimaTempo.Infra\obj\Debug\Auvo.ClimaTempo.Infra.csproj.AssemblyReference.cache
+C:\Users\Lucas\source\repos\TesteEntrevista\Auvo.ClimaTempo\src\Auvo.ClimaTempo.Infra\obj\Debug\Auvo.ClimaTempo.Infra.csproj.CoreCompileInputs.cache
+C:\Users\Lucas\source\repos\TesteEntrevista\Auvo.ClimaTempo\src\Auvo.ClimaTempo.Infra\obj\Debug\Auvo.ClimaTempo.Infra.csproj.CopyComplete
+C:\Users\Lucas\source\repos\TesteEntrevista\Auvo.ClimaTempo\src\Auvo.ClimaTempo.Infra\obj\Debug\Auvo.ClimaTempo.Infra.dll
+C:\Users\Lucas\source\repos\TesteEntrevista\Auvo.ClimaTempo\src\Auvo.ClimaTempo.Infra\obj\Debug\Auvo.ClimaTempo.Infra.pdb

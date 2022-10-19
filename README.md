@@ -1,6 +1,6 @@
 # ClimaTempo
 
-Este projeto foi desenvolvido para Teste Técnico da empresa Auvo Tecnologia.
+Este projeto foi desenvolvido para um Teste Técnico da empresa Auvo Tecnologia.
 
 Para executar o projeto, siga os passos abaixo:
 

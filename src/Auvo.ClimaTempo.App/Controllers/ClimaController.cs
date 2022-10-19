@@ -11,7 +11,7 @@ namespace Auvo.ClimaTempo.App.Controllers
         private readonly IPrevisaoClimaRepository _previsaoClimaRepository = new PrevisaoClimaRepository();
 
         [HttpGet]
-        [Route("sete-dias-previsao/{cidadeId}")]
+        [Route("sete-dias-previsao/{cidadeId:int}")]
         public async Task<ActionResult> ObterSeteDiasDePrevisaoPorCidadeId(int cidadeId)
         {
             var previsaoSeteProximosDias = await _previsaoClimaRepository.ObterPrevisaoClimaDosProximosSeteDiasPorCidadeId(cidadeId);

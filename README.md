@@ -2,6 +2,14 @@
 
 Este projeto foi desenvolvido para um Teste Técnico da empresa Auvo Tecnologia.
 
+Informações:
+- .NET Framework versão 4.6.2
+- Package Microsoft.AspNet.Mvc versão 5.2.9
+- Package EntityFramework versão 6.4.4
+
+Pré-requisitos:
+- É necessário que tenha o **Microsoft SQL Server Express LocalDB** instalado em seu ambiente de desenvolvimento.
+
 Para executar o projeto, siga os passos abaixo:
 
 1. Clone o projeto.

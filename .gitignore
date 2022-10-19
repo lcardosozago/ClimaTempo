@@ -1,3 +1,7 @@
 .vs
 src/Auvo.ClimaTempo.App/App_Data/*
 !src/Auvo.ClimaTempo.App/App_Data/.gitkeep
+src/Auvo.ClimaTempo.App/obj/*
+!src/Auvo.ClimaTempo.App/obj/.gitkeep
+src/Auvo.ClimaTempo.App/bin/*
+!src/Auvo.ClimaTempo.App/bin/.gitkeep

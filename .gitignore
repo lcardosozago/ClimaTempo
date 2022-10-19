@@ -1,2 +1,3 @@
 .vs
 src/Auvo.ClimaTempo.App/App_Data/*
+!src/Auvo.ClimaTempo.App/App_Data
